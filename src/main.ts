@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import {DialogContentExample, DialogContentExampleDialog} from './app/dialog-content-example';
 import {AnotherPageComponent} from './app/another-page/another-page.component';
 import {AppComponent} from './app/app/app.component';
+import {HashLocationStrategy, Location, LocationStrategy} from "@angular/common";
 
 
 @NgModule({
@@ -41,7 +42,6 @@ import {AppComponent} from './app/app/app.component';
   entryComponents: [DialogContentExample, DialogContentExampleDialog],
   declarations: [DialogContentExample, DialogContentExampleDialog, AnotherPageComponent, AppComponent],
   bootstrap: [AppComponent],
-  providers: []
 })
 export class AppModule {}
 

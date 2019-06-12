@@ -1,7 +1,15 @@
 <h1>
-This is another-page!
+    Here You can check .cdk-overlay-container!
 </h1>
-
+<br>
+<br>
+<br>
+<mat-card>
+    <mat-card-content>{{ content || 'Container is empty' }}</mat-card-content>
+    <mat-card-actions><button mat-button (click)="check()">Check it now</button></mat-card-actions>
+</mat-card>
+<br>
+<br>
 <a [routerLink]="['/dialog-example']">
-  <button mat-button >Go to the dialog example page</button>
+    <button mat-button>Go to the dialog example page</button>
 </a>
