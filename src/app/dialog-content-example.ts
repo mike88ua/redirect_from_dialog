@@ -29,7 +29,7 @@ export class DialogContentExample implements OnDestroy {
     this.dialogRef = this.dialog.open(DialogContentExampleDialog, config);
   }
 
-  openDialogHacky() {
+  openDialogTricky() {
     const injector = this.container.injector;
     const rootComponent = Object.create(this.rootContainerService.instance);
     Object.defineProperty(rootComponent, 'injector', {
